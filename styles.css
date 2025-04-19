@@ -1,0 +1,144 @@
+:root {
+  --primary: #4F46E5;
+  --accent: #22D3EE;
+  --bg: #F9FAFB;
+  --card-bg: #FFFFFF;
+  --text: #1F2937;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 30px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  margin-top: 0;
+  color: var(--primary);
+  text-align: center;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="submit"], input[type="reset"], .btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, .btn:hover {
+  background: var(--accent);
+}
+
+.property-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: scale(1.02);
+}
+
+.property-card img {
+  width: 180px;
+  height: 130px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.property-card .info {
+  flex: 1;
+}
+
+.property-card .info h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.hidden {
+  display: none;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E; /* Darker WhatsApp green */
+}
